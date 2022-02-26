@@ -1,1 +1,1 @@
-# Goblin-Dimension-Tuffy-Hacks2022
+# Goblin Dimension Tuffy Hacks 2022
