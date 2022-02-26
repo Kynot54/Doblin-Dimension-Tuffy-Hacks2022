@@ -26,11 +26,8 @@ print(f"Now you are ready for battle, {my_player.classType}!")
 
 levelLoad()
 
-#Level 1
+#Level 1-3
 level(my_player)
 
-if (my_player.health > 0):
-  #Level 2
-  level(my_player)
-  #Level 3
-  level(my_player)
+if my_player.health > 0:
+  print("Congratualtions, You've Won!")

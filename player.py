@@ -1,7 +1,7 @@
 class Player:
     def __init__(self):
         self.health = 50
-        self.attack = 5
+        self.attack = 150
         self.items = []
         self.name = ""
         self.weapon = ""

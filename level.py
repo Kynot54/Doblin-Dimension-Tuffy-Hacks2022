@@ -5,12 +5,19 @@ import randomEnemy
 
 def level(my_player):
   #Level 1,2,3
-  i = 0
-  for i in range(1,4):
+  i = 1
+  while my_player.health > 0 and i != 4:
     print(f"\n\n------LEVEL {i}------")
   
     tiles = randrange(4,9,1)
-    #print(f"You are now in The {location.name}")
+    if i == 1:
+      location = "Jungle"
+    elif i == 2:
+      location = "Factory"
+    elif i == 3:
+      location = "Abyssal Plains"
+      
+    print(f"You are now in The {location}")
     """
     
     This code is intended to make random enemies, can have weighted values"""
@@ -28,12 +35,12 @@ def level(my_player):
         while the_enemy.health > 0 and my_player.health > 0:
           
           cool_combat(my_player, the_enemy)
-          
+          print("You advance a space") #Error when Beating Game Would Show Up Upon Beting the Game
         if(my_player.health <= 0):
           print("\n\nGAME OVER!") #GAME OVER
         else:
-          print("You advance a space")
           tiles = tiles - 1
       else:
-        print("No enemy, you advance a space")
+        print("No enemy, you advance a space\n")
         tiles = tiles - 1
+    i += 1
